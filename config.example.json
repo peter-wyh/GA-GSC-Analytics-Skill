@@ -1,0 +1,25 @@
+{
+  "_comment": "站点配置模板——复制为 config.json 填真值；config.json 已被 .gitignore 排除，绝不入库",
+  "default_site": "site-a",
+  "sites": {
+    "site-a": {
+      "gsc_site": "sc-domain:example-a.com",
+      "ga4_property_id": "000000000",
+      "ga4_measurement_id": "G-XXXXXXXXXX",
+      "out_dir": "~/reports/site-a/ga-gsc-data",
+      "_comment": "占位示例：主站"
+    },
+    "site-b": {
+      "gsc_site": "sc-domain:example-b.com",
+      "ga4_property_id": "000000000",
+      "ga4_measurement_id": "G-XXXXXXXXXX",
+      "out_dir": "~/reports/site-b/ga-gsc-data",
+      "_comment": "多站示例：--site site-b 切换"
+    }
+  },
+  "creds": {
+    "_comment": "凭据路径为脚本所在机器本地路径，仅指向、不含密钥本体；凭据 JSON 本身（google 服务账号 key 文件）永不入本 skill 目录",
+    "gsc_creds_path": "~/.config/ga-gsc/gsc-sa-key.json",
+    "ga4_creds_path": "~/.config/ga-gsc/ga4-sa-key.json"
+  }
+}

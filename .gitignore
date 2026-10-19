@@ -1,0 +1,10 @@
+# 本机私有配置（含 GA4 property ID、凭据路径）
+config.json
+
+# 运行产物
+*.log
+__pycache__/
+*.pyc
+
+# 本机私有实录（含各站经营数据与事故记录）
+references/private/
